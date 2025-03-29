@@ -1,0 +1,34 @@
+digraph tree {
+    -Gcharset=UTF-8
+    "冷却系统失效" [label="冷却系统失效" fontname="Microsoft YaHei"];
+    "水泵故障" [label="水泵故障" fontname="Microsoft YaHei"];
+    "电机烧毁" [label="电机烧毁" fontname="Microsoft YaHei"];
+    "叶轮损坏" [label="叶轮损坏" fontname="Microsoft YaHei"];
+    "电路短路" [label="电路短路" fontname="Microsoft YaHei"];
+    "轴承磨损" [label="轴承磨损" fontname="Microsoft YaHei"];
+    "散热风扇故障" [label="散热风扇故障" fontname="Microsoft YaHei"];
+    "电机故障" [label="电机故障" fontname="Microsoft YaHei"];
+    "轴承磨损" [label="轴承磨损" fontname="Microsoft YaHei"];
+    "控制模块失效" [label="控制模块失效" fontname="Microsoft YaHei"];
+    "温度传感器故障" [label="温度传感器故障" fontname="Microsoft YaHei"];
+    "信号漂移" [label="信号漂移" fontname="Microsoft YaHei"];
+    "连接器松动" [label="连接器松动" fontname="Microsoft YaHei"];
+    "冷却液泄漏" [label="冷却液泄漏" fontname="Microsoft YaHei"];
+    "管路破裂" [label="管路破裂" fontname="Microsoft YaHei"];
+    "密封圈老化" [label="密封圈老化" fontname="Microsoft YaHei"];
+    "冷却系统失效" -> "水泵故障";
+    "冷却系统失效" -> "散热风扇故障";
+    "冷却系统失效" -> "温度传感器故障";
+    "冷却系统失效" -> "冷却液泄漏";
+    "水泵故障" -> "电机烧毁";
+    "水泵故障" -> "叶轮损坏";
+    "水泵故障" -> "电路短路";
+    "水泵故障" -> "轴承磨损";
+    "散热风扇故障" -> "电机故障";
+    "散热风扇故障" -> "轴承磨损";
+    "散热风扇故障" -> "控制模块失效";
+    "温度传感器故障" -> "信号漂移";
+    "温度传感器故障" -> "连接器松动";
+    "冷却液泄漏" -> "管路破裂";
+    "冷却液泄漏" -> "密封圈老化";
+}
